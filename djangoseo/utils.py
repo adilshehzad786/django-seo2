@@ -6,9 +6,7 @@ from django.utils.functional import lazy
 from django.utils.safestring import mark_safe
 from django.utils.html import conditional_escape
 from django.contrib.contenttypes.models import ContentType
-from django.core.urlresolvers import (RegexURLResolver, RegexURLPattern,
-                                      Resolver404, get_resolver)
-
+from django.urls import reverse #this solved my error
 
 class NotSet(object):
     """A singleton to identify unset values (where None would have meaning)."""
